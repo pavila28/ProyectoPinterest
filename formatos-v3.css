@@ -1,0 +1,104 @@
+header{
+    min-height: 50px;
+    align-items: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar-pinterest{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#pinterest-icon{
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+#iconos-derecha{
+    display: flex;
+}
+
+nav ul li a{
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.botones{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#b-inicio{
+    padding-left: 10px;
+}
+#b-hoy{
+    padding-left: 10px;
+}
+#b-crear{
+    padding-left: 10px;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.finder{
+    height: 30px;
+    width: 900px;
+    border-radius: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#notifications{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#message{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#profile-img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-image{
+    height: 300px;
+    border-radius: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cards-image:hover{
+    cursor: pointer;
+}
