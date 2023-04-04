@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    min-height: 50px;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar-pinterest{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#pinterest-icon{
+    padding-left: 10px;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+#iconos-derecha{
+    display: flex;
+}
+
+nav ul li a{
+    padding-right: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.botones{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#b-inicio{
+    padding-left: 10px;
+}
+#b-hoy{
+    padding-left: 10px;
+}
+#b-crear{
+    padding-left: 10px;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.finder{
+    height: 30px;
+    width: 900px;
+    border-radius: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#notifications{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#message{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#profile-img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:900px){
+    #navbar-pinterest{
+        flex-direction: column;
+        background-color: rgb(48, 47, 47)
+    }
+    main{
+        flex-direction: column;
+    }
+    body{
+        background-color: rgb(48, 47, 47)
+    };
+}
+
+/* Aquí debajo va todo lo del MAIN */
+main{
+    margin-top: 25px;
+}
+
+.columnas{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card-image{
+    border-radius: 10%;
+    position: relative;
+}
+
+.card-image img{
+    width: 236px;
+    border-radius: 10%;
+}
+
+.card-image:hover{
+    cursor: zoom-in;
+}
+
+.b-guardar{
+    position: absolute;
+    background-color: #e60023;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 38%;
+    height: 48px;
+    width: 90px;
+    top: 5px;
+    right: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.b-guardar:hover{
+    cursor: pointer;
+    background-color: #ad081b;
+}
+
+.b-descargar{
+    position: absolute;
+    bottom: 15px;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+.b-dots{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+}
+
+.b-tarjeta{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
+.b-tarjeta:hover{
+    opacity: 1;
+    }
+
+.b-descargar:hover{
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
+
+.b-dots:hover{
+    cursor: pointer;
+    background-color: #e2e2e2;
+}
